@@ -1,12 +1,9 @@
 ---
-  vars:
-    myusername: Ceeyit
-
   - name: Update Static Page
     copy:
       src: static.html
       dest: /var/www/html/static.html
-    
+
   - name: Update Dynamic Page
     template:
       src: dynamic.j2
